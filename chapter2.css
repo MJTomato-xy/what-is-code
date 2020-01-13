@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans:800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:700|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700|Work+Sans:500&display=swap');
+.header {
+    min-width: ;
+    padding: 5px;
+    text-align: center;
+    font-size: 56px;
+    color: #706695;
+    background-color: #e8eae7;
+    background-image: linear-gradient(#eadcc1, #e8eae7);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  .row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  .column {
+    padding: 10px;
+    height: 100%;
+  }
+  .column.side {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+ }
+ html,body{ 
+     height:100%; 
+     margin:0; 
+     padding:0;
+     background-color: hsl(#e8eae7, 100%, 50%);"
+}
+ .column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+.footer {
+    min-width: 100vmax;
+    position:absolute; 
+    background-color: #706695;
+    padding: 10px;
+    text-align: center;
+    color: #e8eae7;
+    font-family: 'Maven Pro', sans-serif;
+  }
+ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 360px;
+    background-color: #f5b994;
+    border-radius: 20px;
+    font-family: 'Work Sans', sans-serif;
+    
+  }
+  li a {
+    display: block;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #fe8769;
+    color: white;
+    font-weight: 600;
+  }
+#p5 {
+    border-style: solid;
+    border-color:#f5b994;
+    border-radius: 20px;
+    border-width: 1px;
+    padding: 10px;
+    color: #fe8769;
+}
+#p6 {
+    border-style: solid;
+    border-color:#f5b994;
+    border-radius: 20px;
+    border-width: 1px;
+    padding: 10px;
+    color: #fe8769;
+}
+#p7 {
+    border-style: solid;
+    border-color:#f5b994;
+    border-radius: 20px;
+    border-width: 1px;
+    padding: 10px;
+    color: #fe8769;
+}
+#p8 {
+    border-style: solid;
+    border-color:#f5b994;
+    border-radius: 20px;
+    border-width: 1px;
+    padding: 10px;
+    color: #fe8769;
+}
+#p9 {
+    border-style: solid;
+    border-color:#f5b994;
+    border-radius: 20px;
+    border-width: 1px;
+    padding: 10px;
+    color: #fe8769;
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2.3 How does code become software</title>
+    <link href="chapter23.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="grid-container">
+<div class="header">
+    <header>
+     <h2>2.3 How Does Code Become Software?</h2>
+    </header>   
+</div>
+    <div class="item1">
+        <ul>
+        <li><a href="chapter2.html">Let's Begin</a></li>
+        <li><a href="chapter22.html">2.2 From Hardware to Software</a></li>
+        <li><a href="chapter24.html">2.4 What Is an Algorithm?</a></li>
+        <li><a href="chapter25.html">2.5 The Sprint</a></li>
+        <li><a href="chapter26.html">2.6 What's With All These Conferences ?</a></li>
+    </ul></div>
+    <div class="item2">
+        <h2>What does code looks like?</h2>
+        We know that a computer is a clock with benefits, and that software starts as
+            code, but how?<br></br>
+            We know that someone, somehow, enters a program into the computer and
+            the program is made of code. In the old days, that meant putting holes in
+            punch cards. Then you'd put the cards into a box and give them to an
+            operator who would load them, and the computer would flip through the
+            cards, identify where the holes were, and update parts of its memory, and
+            then it would—OK, that's a little too far back. <br>Let's talk about modern typinginto-
+            a-keyboard code. It might look like this:
+            <p>ispal: {x~|x}</p>
+            <p>That's in a language called, simply, K, famous for its brevity. That code
+                will test if something is a palindrome. If you next typed in <i>ispal "able
+                was i ere i saw elba"</i>, K will confirm that yes, this is a palindrome.</p>
+            <p>So how else might your code look? Maybe like so, in Excel (with all the formulas hidden away under the numbers they produce, and a check box
+                that you can check):</p>
+            <p>But Excel spreadsheets are tricky, because they can hide all kinds of things
+                under their numbers. This opacity causes risks. One study by a researcher at
+                the University of Hawaii found that 88 percent of spreadsheets contain
+                errors.</p>  
+            <p>Programming can also look like Scratch, a language for kids:<br>That's definitely programming right there—the computer is waiting for a
+                click, for some input, just as it waits for you to type an “a,” and then it's doing
+                something repetitive, and it involves hilarious animals.</p>
+            <p>Or maybe:</p>
+            <p id="print">PRINT *, "WHY WON'T IT WORK<br>
+               END</p>
+            <p>That's in Fortran. The reason it's not working is that you forgot to put a
+                quotation mark at the end of the first line. Try a little harder, thanks.</p>
+             <p>All of these things are coding of one kind or another, but the last bit is what
+                most programmers would readily identify as code. A sequence of symbols
+                (using typical keyboard characters, saved to a file of some kind) that
+                someone typed in, or copied, or pasted from elsewhere. That doesn't mean
+                the other kinds of coding aren't valid or won't help you achieve your goals.<br></br>
+                Coding is a broad human activity, like sport, or writing. When software
+                developers think of coding, most of them are thinking about lines of code in
+                files. They're handed a problem, think about the problem, write code that
+                will solve the problem, and then expect the computer to turn word into deed.</p>
+            <h2>How are instructions being implemented?</h2>
+            <p>Code is inert. How do you make it ert? You run software that transforms it
+                into machine language. The word “language” is a little ambitious here, given
+                that you can make a computing device with wood and marbles. Your goal is
+                to turn your code into an explicit list of instructions that can be carried out
+                by interconnected logic gates, thus turning your code into something that
+                can be executed—software.</p>   
+            <p>A compiler is software that takes the symbols you typed into a file and
+                transforms them into lower-level instructions. Imagine a programming
+                language called Business Operating Language United System, or Bolus. It’s a
+                terrible language that will have to suffice for a few awkward paragraphs. It
+                has one real command, PRINT. We want it to print <b>HELLO NERDS</b> on our
+                screen. To that end, we write a line of code in a text file that says:</p>
+            <p class="text2">PRINT {HELLO NERDS}</p>
+            <p>And we save that as nerds.bol. Now we run gnubolus nerds.bol, our
+                imaginary compiler program. How does it start? The only way it can: by
+                doing lexical analysis, going character by character, starting with the “p,”
+                grouping characters into tokens, saving them into our one-dimensional tree
+                boxes. Let’s be the computer.</p>
+                <table>
+                    <tr>
+                      <th>Character</th>
+                      <th>Meaning</th>
+                    </tr>
+                    <tr>
+                      <td>P</td>
+                      <td>Hmmmm...?</td>
+                    </tr>
+                    <tr>
+                      <td>R</td>
+                      <td>Someone say something?</td>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>I'm waiting...</td>
+                      </tr>
+                    <tr>
+                        <td>N</td>
+                        <td>[drums fingers]</td>
+                    </tr>
+                    <tr>
+                        <td>T</td>
+                        <td>Any time now...</td>
+                      </tr>
+                      <tr>
+                        <td>SPACE</td>
+                        <td>Ah, "PRINT"</td>
+                      </tr>
+                    <tr>
+                        <td>{</td>
+                        <td>String coming!</td>
+                      </tr>
+                      <tr>
+                        <td>H</td>
+                        <td>These</td>
+                      </tr>
+                      <tr>
+                        <td>E</td>
+                        <td>letters</td>
+                      </tr>
+                      <tr>
+                        <td>L</td>
+                        <td>don’t</td>
+                      </tr>
+                      <tr>
+                        <td>L</td>
+                        <td>matters</td>
+                      </tr>
+                      <tr>
+                        <td>O</td>
+                        <td>la</td>
+                      </tr>
+                      <tr>
+                        <td>Space</td>
+                        <td>la</td>
+                      </tr>
+                      <tr>
+                        <td>N</td>
+                        <td>just</td>
+                      </tr>
+                      <tr>
+                        <td>E</td>
+                        <td>saving</td>
+                      </tr>
+                      <tr>
+                        <td>R</td>
+                        <td>them</td>
+                      </tr>
+                      <tr>
+                        <td>D</td>
+                        <td>for</td>
+                      </tr>
+                      <tr>
+                        <td>S</td>
+                        <td>later</td>
+                      </tr>
+                      <tr>
+                        <td>}</td>
+                        <td>Stringtime is over!</td>
+                      </tr>
+                      <tr>
+                        <td>End of file</td>
+                        <td>Time to get to work.</td>
+                      </tr>
+                  </table>
+        <p>The reason I'm showing it to you is so you can see how every character
+            matters. Computers usually “understand” things by going character by
+            character, bit by bit, transforming the code into other kinds of code as they
+            go. The Bolus compiler now organizes the tokens into a little tree. Kind of
+            like a sentence diagram. Except instead of nouns, verbs, and adjectives, the
+            computer is looking for functions and arguments. Our program above, inside
+            the computer, becomes this:</p>
+            <h2>"Tree Structure"</h2>
+            <img src="1.JPG" alt="tree structure" align="middle">
+        <p>Trees are a really pleasant way of thinking of the world. Your memo at work
+            has sections that have paragraphs? Tree. Your e-mail program contains
+            messages that contain subject lines and addresses? Tree. Your favorite
+            software program that has a menu bar with individual items that have
+            subitems? Tree. Every day is Arbor Day in Codeville.<br></br>
+            Of course, it's all a trick. If you cut open a computer, you'll find countless
+            little boxes in rows, places where you can put and retrieve bytes. Everything
+            ultimately has to get down to things in little boxes pointing to each other.
+            That’s just how things work. So that tree is actually more like this:</p>
+            <h2>Characters build up a routine</h2>
+            <img src="2.JPG" alt="tree structure" align="middle">
+        <p>Every character truly, truly matters. Every single stupid misplaced
+            semicolon, space where you meant tab, bracket instead of a parenthesis—
+            mistakes can leave the computer in a state of panic. The trees don’t know
+            where to put their leaves. Their roots decay. The boxes don't stack neatly. For
+            not only are computers as dumb as a billion marbles, they're also positively
+            Stradivarian in their delicacy.</p>
+        <p>That process of going character by character can be wrapped up into a
+            routine—also called a function, a method, a subroutine, or component.
+            (Little in computing has a single, reliable name, which means everyone is
+            always arguing over semantics.) And that routine can be run as often as you
+            need. Second, you can print anything you wish, not just one phrase. Third,
+            you can repeat the process forever, and nothing will stop you until the
+            machine breaks or, barring that, heat death of the universe. Obviously no
+            one besides Jack Nicholson in The Shining really needs to keep typing the
+            same phrase over and over, and even then it turned out to be a bad idea.</p>
+        <p>Instead of worrying about where the words are stored in memory and having
+            to go character by character, programming languages let you think of things
+            like strings, arrays, and trees. That's what programming gives you. You may
+            look over a programmer's shoulder and think the code looks complex and
+            boring, but it's covering up repetitive boredom that's unimaginably vast.</p>
+        <p>This thing we just did with individual characters, compiling a program down
+            into a fake assembly language so that the nonexistent computer can print
+            each character one at a time? The same principle applies to every pixel on
+            your screen, every frequency encoded in your MP3 files, and every imaginary
+            cube in Minecraft. Computing treats human language as an arbitrary set of
+            symbols in sequences. It treats music, imagery, and film that way, too.</p>
+        <p>It's a good and healthy exercise to ponder what your computer is doing right
+            now. Maybe you're reading this on a laptop: What are the steps and layers
+            between what you're doing and the Lilliputian mechanisms within? When
+            you double-click an icon to open a program such as a word processor, the
+            computer must know where that program is on the disk. It has some sort of
+            accounting process to do that. And then it loads that program into its
+            memory—which means that it loads an enormous to-do list into its memory
+            and starts to step through it. What does that list look like?</p>
+        <p>Maybe you're reading this in print. No shame in that. In fact, thank you. The
+            paper is the artifact of digital processes. Remember how we put that “a” on
+            screen? See if you can get from some sleepy writer typing that letter on a
+            keyboard in Brooklyn, N.Y., to the paper under your thumb. What framed
+            that fearful symmetry?
+        <p>Thinking this way will teach you two things about computers: One, there's no
+            magic, no matter how much it looks like there is. There’s just work to make
+            things look like magic. And two, it's crazy in there.</p>
+</div>
+    <div class="item3"><br></br><br></br><br></br><br></br>
+        <p class="response1">This is most often a string of characters on a screen, but can theoretically be almost anything. 
+        <br></br>Coding has many different languages eg. K, Scratch or Fortran. Children can even create code in apps by moving images around.</p>
+        </br</br><br></br><br></br><br><br></br><br>
+        <p class="response1"> It is the language activated by going into a compiler to give computers instructions.</p>
+    </br</br><br></br><br></br><br><br></br><br></br></br><br></br></br><br></br><br><br></br><br><br></br><br></br></br><br></br><p class="response1">Computer reads <b>characer by character</b>. </p><br><br></br><br><br></br><br></br></br><br></br><br><br></br><br><br></br><br></br></br><br></br><br><br></br><br><br></br><br></br></br>
+       <p class="response1">Computer "thinks" about the instructions in a <b>"tree" structure</b>: 
+        function/method/subroutine/component.</p>    
+    </br</br><br></br><br></br><br><br></br><br></br>  
+    <p class="response1">Every character matters. If the root goes wrong, then leaves can grow nowhere.</p>
+</br</br><br></br><br></br><br><br></br><br></br>  
+<p class="response1">Everything we see on computers are simply different combination of symbol. These symbols group together to make instructions. The numerous combinations makes programming language incredibly powerful.</p>
+    </div>
+<div class="footer">
+  <p1>What is Code? —— Paul Ford</p1>
+</div>
+</div>
+</body>
+</html>

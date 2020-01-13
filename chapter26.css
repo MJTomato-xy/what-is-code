@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:800|Maven+Pro:700|Raleway:800|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:700|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700|Work+Sans:500&display=swap');
+.header {
+  min-width: 100%;
+  background-color: #e8eae7;
+  background-image: linear-gradient(#eadcc1, #e8eae7);
+  padding: 5px;
+  border-radius: 12px;
+  text-align: left;
+  font-size: 35px;
+  color: #706695;
+  font-family: 'Raleway', sans-serif;
+}
+.footer {
+  background-color: #706695;
+  padding: 10px;
+  text-align: center;
+  color: #e8eae7;
+  font-family: 'Maven Pro', sans-serif;
+}
+.header { grid-area: header; }
+.item1 { grid-area: menu; }
+.item2 { grid-area: main; font-family: 'Roboto', sans-serif;}
+.item3 { grid-area: right; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'menu main main main right right'
+  'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 360px;
+  background-color: #f5b994;
+  border-radius: 20px;
+  font-family: 'Work Sans', sans-serif;
+
+}
+li a {
+  display: block;
+  border-radius: 12px;
+  color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #fe8769;
+  color: white;
+  font-weight: bold;
+}
+i {
+  font-weight: lighter;
+}
+.response1 {
+  color: #fe8769;
+  border-style: solid;
+  border-color:#f5b994;
+  border-radius: 20px;
+  border-width: 1px;
+  padding: 10px;
+}

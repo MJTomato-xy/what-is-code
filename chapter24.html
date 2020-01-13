@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2.4 What is an Algorithm?</title>
+    <link href="chapter24.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="gridcontainer">
+    <div class="header">
+        <h2>2.4 What is an Algorithm?</h2>
+    </div>
+    <div class="item1">
+            <ul>
+                <li><a href="chapter2.html">Let's Begin</a></li>
+                <li><a href="chapter22.html">2.2 From Hardware to Software</a></li>
+                <li><a href="chapter23.html">2.3 How Does Code Become Software ?</a></li>
+                <li><a href="chapter25.html">2.5 The Sprint</a></li>
+                <li><a href="chapter26.html">2.6 What's With All These Conferences ?</a></li>
+            </ul>
+    </div>
+    <div class="item2">
+       <h2>The meaning of "algorithm"</h2>
+       <p> "Algorithm" is a word writers invoke to sound smart about technology.
+        Journalists tend to talk about "Facebook's algorithm" or a "Google
+        algorithm,"" which is usually inaccurate. They mean "software."
+        <br><br>Algorithms don't require computers any more than geometry does. An
+        algorithm solves a problem, and a great algorithm gets a name. Dijkstra's
+        algorithm, after the famed computer scientist Edsger Dijkstra, finds the
+        shortest path in a graph. By the way, “graph” here doesn’t mean but
+        rather.</p>
+            <p class="response1">Probably I need to rethink about the word "algorithm" ?
+                Algorithm refers to a set of instructions that solves a specific problem. 
+                No "algorithm" is named after Facebook or Google —— it's software. </p>
+        <p>Think of a map; streets connect to streets at intersections. It's a graph! There
+            are graphs all around you. Plumbing, electricity, code compilation, social
+            networks, the Internet, all can be represented as graphs! (Now to monetize
+            …)</p>
+        <h2>Euclid algorithm in different languages</h2>
+        <p>Many algorithms have their own pages on Wikipedia. You can spend days
+            poking around them in wonder. Euclid's algorithm, for example, is the go-to
+            specimen that shows up whenever anyone wants to wax on about
+            algorithms, so why buck the trend? It's a simple way of determining the
+            greatest common divisor for two numbers. Take two numbers, like 16 and 12.
+            Divide the first by the second. If there's a remainder (in this case there is, 4),
+            divide the smaller number, 12, by that remainder, 4, which gives you 3 and
+            no remainder, so we're done—and 4 is the greatest common divisor. (Now
+            translate that into machine code, and we can get out of here.)</p>
+        <h3>Euclid in Forth:</h3>
+            <p>There's a site called Rosetta Code that shows you different algorithms in
+            different languages. The Euclid's algorithm page is great. Some of the
+            examples are suspiciously long and laborious, and some are tiny nonsense
+            poetry, like this one, in the language Forth:</p>
+        <p id="gcd">: gcd ( a b -- n )<br>
+            begin dup while tuck mod repeat drop ;</p>
+        <h3>Euclid in Postscript:</h3>
+        <p>Read it out loud, preferably to friends. Forth is based on the concept of a
+           stack, which is a special data structure. You make "words" that do things on
+           the stack, building up a little language of your own. PostScript, the
+           language of laser printers, came after Forth but is much like it. Look at how
+           similar the code is, give or take some squiggles:</p>
+        <p id="gcd">/gcd {<br>
+            {<br>
+            {0 gt} {dup rup mod} {pop exit} ifte<br>
+            } loop<br>
+            }.</p>
+        <p>And that's Euclid's algorithm in PostScript. I admit, this might be fun
+            only for me. Here it is in Python (all credit to Rosetta Code):</p>
+        <p id="gcd">def gcd(u, v):<br>
+            return gcd(v, u % v) if v else abs(u)</p>
+        <p>A programming language is a system for encoding, naming, and organizing
+            algorithms for reuse and application. It's an algorithm management system.
+            This is why, despite the hype, it's silly to say Facebook has an algorithm. An
+            algorithm can be translated into a function, and that function can be called
+            (run) when software is executed. There are algorithms that relate to image
+            processing and for storing data efficiently and for rapidly running through
+            the elements of a list. Most algorithms come for free, already built into a
+            programming language, or are available, organized into libraries, for
+            download from the Internet in a moment. You can do a ton of programming
+            without actually thinking about algorithms—you can save something into a
+            database or print a Web page by cutting and pasting code. But if you want the
+            computer to, say, identify whether it's reading Spanish or Italian, you'll need
+            to write a language-matching function. So in that sense, algorithms can be
+            pure, mathematical entities as well as practical expressions of ideas on
+            which you can place your grubby hands.</p>
+        <h2>What is computer science?</h2>
+        <p>One thing that took me forever to understand is that computers aren't
+            actually "good at math." They can be programmed to execute certain
+            operations to certain degrees of precision, so much so that it looks like
+            “doing math” to humans. Dijkstra said: "Computer science is no more
+            about computers than astronomy is about telescopes." A huge part of
+            computer science is about understanding the efficiency of algorithms—
+            how long they will take to run. Computers are fast, but they can get
+            bogged down—for example, when trying to find the shortest path
+            between two points on a large map. Companies such as Google,
+            Facebook, and Twitter are built on top of fundamental computer
+            science and pay great attention to efficiency, because their users do
+            things (searches, status updates, tweets) an extraordinary number of
+            times. Thus it's absolutely worth their time to find excellent computer
+            scientists, many with doctorates, who know where all the efficiencies
+            are buried.</p>
+        <p>It takes a good mathematician to be a computer scientist, but a middling
+            one to be an effective programmer. Until you start dealing with millions
+            of people on a network or you need to blur or sharpen a million photos
+            quickly, you can just use the work of other people. When it gets real,
+            break out the comp sci. When you're doing anything a hundred trillion
+            times, nanosecond delays add up. Systems slow down, users get cranky,
+            money burns by the barrel.</p>
+        <p class="response1">Unfortunately computer science is not simply about nerds doing precise mathematics, 
+            but rather understanding the efficiency of algorithms. </p>
+        <p>The hardest work in programming is getting around things that aren't
+            computable, in finding ways to break impossible tasks into small, possible
+            components, and then creating the impression that the computer is doing
+            something it actually isn't, like having a human conversation. This used to
+            be known as "artificial intelligence research," but now it's more likely to go
+            under the name “machine learning” or "data mining." When you speak to Siri
+            or Cortana and they respond, it's not because these services understand you;
+            they convert your words into text, break that text into symbols, then match
+            those symbols against the symbols in their database of terms, and produce
+            an answer. Tons of algorithms, bundled up and applied, mean that
+            computers can fake listening.</p>
+        <p>A programming language has at least two jobs, then. It needs to wrap up lots
+            of algorithms so they can be reused. Then you don't need to go looking for a
+            square-root algorithm (or a genius programmer) every time you need a
+            square root. And it has to make it easy for programmers to wrap up new
+            algorithms and routines into functions for reuse. The DRY principle, for
+            Don't Repeat Yourself, is one of the colloquial tenets of programming. That
+            is, you should name things once, do things once, create a function once, and
+            let the computer repeat itself. This doesn't always work. Programmers repeat
+            themselves constantly. I've written certain kinds of code a hundred times.
+            This is why DRY is a principle.</p>
+        <p class="response1">Real smart programmers figure out how to compute things that 
+            seems impossible like artificial intelligence, eg. Siri. <br>
+            Siri doesn't LOVE us. She's just codes...<br><br>
+            Learning how to convert the one human action into several computer instructions 
+            by using programming languages is a huge part of programming. </p>
+        <p>Enough talk. Let's code!</p>
+        </p>
+    </div>
+    <div class="footer">
+        <p1>What is Code? —— Paul Ford</p1>
+    </div>
+</div>
+</body>
+</html>
